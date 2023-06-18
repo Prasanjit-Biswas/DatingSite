@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filter.js/1.0/filter.min.js"
+        integrity="sha512-rdHOr3bRkR/Fpwm7vWtpxb1tRrJxDUK6/INlWImbD/iOGUoaqQ8Izu4bWsYYH7+6AZvXxEzyS+xnXXPMfvds6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar d-flex align-content-center px-5">
+        <div class="logo">
+            <h2>Dating.com</h2>
+        </div>
+        <div class="menu">
+            <ul class="">
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Community</li>
+                <li>Shops</li>
+                <li>Blogs</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="menu-icon ">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!-- personal info -->
+    <div class="personal_info py-5">
+        <div class="row">
+            <div class=" col-md-12 col-lg-6 p-5">
+                <form class=" p-5">
+                    <h2>Find Your Ture Love</h2>
+                    <p>Serious dating with your perfect match is just a click away.</p>
+                    <label for="">I am a</label>
+                    <div class="my_gender pb-3">
+                        <div class="input border border-secondary d-flex align-items-center">
+                            <div class="d-flex gap-2">
+                                <input type="radio" name="sex">
+                                <span>Male</span>
+                            </div>
+                            <i class="fa-solid fa-mars text-primary"></i>
+                        </div>
+                        <div class="input border border-secondary d-flex align-items-center">
+                            <div class="d-flex gap-2">
+                                <input type="radio" name="sex">
+                                <span>Female</span>
+                            </div>
+                            <i class="fa-solid fa-venus text-muted"></i>
+                        </div>
+                    </div>
+                    <label for="">Looking for</label>
+                    <div class="oposite_gender pb-3">
+                        <div class="input border border-secondary d-flex align-items-center">
+                            <div class="d-flex gap-2">
+                                <input type="radio" name="oposit_sex">
+                                <span>Female</span>
+                            </div>
+                            <i class="fa-solid fa-venus text-muted"></i>
+                        </div>
+                        <div class="input border border-secondary d-flex align-items-center">
+                            <div class="d-flex gap-2">
+                                <input type="radio" name="oposit_sex">
+                                <span>Male</span>
+                            </div>
+                            <i class="fa-solid fa-mars text-primary"></i>
+                        </div>
+                    </div>
+                    <label for="">Age</label>
+                    <div class="age pb-3 d-flex gap-3">
+                        <select name="ages" id="ages" class="w-100 py-1">
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23" 23></option>
+                        </select>
+                        <select name="ages" id="ages" class="w-100 py-1">
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23" 23></option>
+                        </select>
+                    </div>
+                    <label for="">Country</label>
+                    <div class="countery pb-3 ">
+                        <select name="ages" id="ages" class="w-100 py-2">
+                            <option value="india">india</option>
+                            <option value="newzeland">newzelan</option>
+                            <option value="bhutan">bhutan</option>
+                            <option value="japan">japan</option>
+                            <option value="bangaladesh">bangaladesh</option>
+                            <option value="nepal">nepal</option>
+                        </select>
+                    </div>
+                    <div class="button mt-2 ">
+                        <input type="button" class="w-100 py-2" value="Find Your Partner">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-6 mt-4">
+                <img src="./img/01.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="services py-5 my-5">
+        <div class="content d-flex flex-column text-center py-5">
+            <h1>Our feature</h1>
+            <p>Our dating platform is like a breath of fresh air. Clean and trendy design with ready to use features we
+                are sure you will love.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 services-features">
+                <div class="box d-flex justify-content-center flex-column align-items-center text-center">
+                    <img src="./img/01.jpg" alt="">
+                    <h2>Simple To Use</h2>
+                    <p>Simple steps to follow to have a matching connection.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 services-features">
+                <div class="box d-flex justify-content-center flex-column align-items-center text-center">
+                    <img src="./img/02.jpg" alt="">
+                    <h2>Simple To Use</h2>
+                    <p>Simple steps to follow to have a matching connection.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 services-features">
+                <div class="box d-flex justify-content-center flex-column align-items-center text-center">
+                    <img src="./img/03.jpg" alt="">
+                    <h2>Simple To Use</h2>
+                    <p>Simple steps to follow to have a matching connection.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 services-features">
+                <div class="box d-flex justify-content-center flex-column align-items-center text-center">
+                    <img src="./img/04.jpg" alt="">
+                    <h2>Simple To Use</h2>
+                    <p>Simple steps to follow to have a matching connection.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- personfilter -->
+    <div class="personsFilter  py-5 my-5">
+        <ul class="pb-4">
+            <li class="list bg-white" data-filter="all">
+                <div class="">
+                    <h5>View All </h5>
+                    <i class="fa-solid fa-venus-mars text-danger"></i>
+                </div>
+            </li>
+            <li class="list bg-white" data-filter="male">
+                <div class="">
+                    <h5> male </h5>
+                    <i class="fa-solid fa-mars text-primary"></i>
+                </div>
+            </li>
+            <li class="list bg-white" data-filter="female">
+                <div class="">
+                    <h5> female </h5>
+                    <i class="fa-solid fa-venus text-muted"></i>
+                </div>
+            </li>
+        </ul>
+        <div class="persons mx-auto">
+            <div class="itemBox female"><img
+                    src="https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min.jpg" alt=""></div>
+            <div class="itemBox male"><img
+                    src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVufGVufDB8fDB8fHww&w=1000&q=80"
+                    alt=""></div>
+
+            <div class="itemBox male"><img
+                    src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVufGVufDB8fDB8fHww&w=1000&q=80"
+                    alt=""></div>
+
+            <div class="itemBox female"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7VlV7PRqlCbEOkIoC8-RwsB2hJGDQLm1Oo-W5sd7QA&usqp=CAU&ec=48665701.jpg"
+                    alt=""></div>
+            <div class="itemBox male"><img
+                    src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVufGVufDB8fDB8fHww&w=1000&q=80"
+                    alt=""></div>
+            <div class="itemBox female"><img
+                    src="https://www.levi.in/on/demandware.static/-/Sites-LeviIN-Library/en_IN/dwefdedfe1/images/category/WomenClothing/Women%20Category%20-%20Jackets.png"
+                    alt=""></div>
+            <div class="itemBox male"><img
+                    src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVufGVufDB8fDB8fHww&w=1000&q=80"
+                    alt=""></div>
+            <div class="itemBox female"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvsokiOR9idq-3H7ZTYychwKNCD96k09UsgJD3_aCBvA&usqp=CAU&ec=48665701"
+                    alt=""></div>
+
+        </div>
+        <div class="btn pt-5 d-flex justify-content-center "><button type="button" class="btn btn-outline-success">See
+                More People</button></div>
+    </div>
+    <!-- success stories -->
+    <div class="stories py-5 my-5">
+        <div class="pb-4">
+            <h1 class="text-center">Success Stories</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam cum officia
+                culpa voluptatum, ipsa quae quasi magni praesentium inventore fuga!</p>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 col-lg-4">
+                <img src="./img/01.3.jpg" alt="">
+                <h4>Dream Places And Locations To Visit In 2022</h4>
+                <div class="content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                    <div class="reviewer-name">
+                        <h5>Hester Reeves</h5>
+                        <div class="date">April 16, 2022</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="./img/stories2.jpg" alt="">
+                <h4>Dream Places And Locations To Visit In 2022</h4>
+                <div class="content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                    <div class="reviewer-name">
+                        <h5>Hester Reeves</h5>
+                        <div class="date">April 16, 2022</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <img src="./img/stories3.jpg" alt="">
+                <h4>Dream Places And Locations To Visit In 2022</h4>
+                <div class="content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+                    <div class="reviewer-name">
+                        <h5>Hester Reeves</h5>
+                        <div class="date">April 16, 2022</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- people near you -->
+    <div class="meetPeople px-5 my-5 py-5">
+        <div class="pb-4">
+            <h1 class="text-center">Meet Singles In Your Area</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam cum officia
+                culpa voluptatum, ipsa quae quasi magni praesentium inventore fuga!</p>
+        </div>
+        <div class="row ">
+            <div class="col-md-6"><img src="./img/place1.jpg" class="img-fluid" alt=""></div>
+            <div class="col-md-3"><img src="./img/place2.jpg" class="img-fluid" alt=""></div>
+            <div class="col-md-3"><img src="./img/place3.jpg" class="img-fluid" alt=""></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3"><img src="./img/place4.jpg" class="img-fluid" alt=""></div>
+            <div class="col-md-3"><img src="./img/place5.jpg" class="img-fluid" alt=""></div>
+            <div class="col-md-6"><img
+                    src="https://www.holidify.com/images/cmsuploads/compressed/Colosseum_in_Rome,_Italy_-_April_2007_20181213182254.jpg"
+                    class="img-fluid" alt=""></div>
+        </div>
+    </div>
+    <!-- membershipdetails -->
+    <div class="membership px-3">
+        <div class="row gx5- py-5 ">
+            <div class="col-md-12 col-lg-6 gap-5 d-flex justify-content-center align-items-center membership-chi">
+                <img src="./img/09.png" alt="">
+                <div class="content2 d-flex flex-column w-50">
+                    <h1>Trust And Safety</h1>
+                    <p>Choose from one of our membership levels and unlock features you need.</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 gap-5 d-flex justify-content-center align-items-center membership-chi">
+                <img src="./img/10.1.png" alt="">
+                <div class="content2 d-flex flex-column w-50">
+                    <h1>
+                        Simple Membership</h1>
+                    <p>Choose from one of our membership levels and unlock features you need.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- connect to everyone -->
+    <div class="app px-5 mt-5 pt-5">
+        <div class="row gy-5">
+            <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center px-2">
+                <img src="./img/01.4.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex justify-content-center flex-column">
+                <h4 class="py-1">Easy Connect To Everyone</h4>
+                <h1 class="py-1">Download Our App</h1>
+                <p class="py-1">You find us, finally and you are already in love. More than 5.000.000 around the world
+                    already shared the same experience andng ares uses our system Joining us today just got easier!</p>
+                <div class="row gx-5 gy-4">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="d-flex  justify-content-center border download">
+                            <div class="">
+                                <img src="https://download.logo.wine/logo/Apple_Store/Apple_Store-Logo.wine.png"
+                                    width="70px" alt="">
+                            </div>
+                            <div class="">
+                                <h6>Available on The</h6>
+                                <h5>App Store</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="d-flex justify-content-center border download">
+                            <div class="">
+                                <img src="https://yt3.googleusercontent.com/UlCw6skRB67meHd_jffAzV6DeXzAk1YzEFyhxI4meSgYAjA0wRhEnhT3TfHvuo7R-VwISzRTTao=s900-c-k-c0x00ffffff-no-rj"
+                                    width="50px" alt="">
+                            </div>
+                            <div class="">
+                                <h6>Available on The</h6>
+                                <h5>App Store</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer px-5 pt-5  ">
+        <div class="row gy-4">
+            <div class="col-md-12 col-lg-6 bg d-flex  align-items-center gap-3">
+                <h3>Newsletter Sign Up
+                </h3>
+                <div class="d-flex signup">
+
+                    <input type="text">
+                    <button class=" px-2 py-2">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 d-flex  align-items-center gap-3">
+                <h3>Join Community
+                </h3>
+                <div class="d-flex gap-2 socialmedia">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitch"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="quickLinks col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center">
+                <h2>Our Information</h2>
+                <ul class=" ">
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> About Us</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Contact Us</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Customer Reviews</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Success Stories</li>
+                </ul>
+            </div>
+            <div class=" quickLinks col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center">
+                <h2>My Account</h2>
+                <ul class="">
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Manage Account</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span>Safety Tips</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span>Account Varification</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Safety and Security</li>
+                </ul>
+            </div>
+            <div class=" quickLinks col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center">
+                <h2>Help Center</h2>
+                <ul class="">
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span>Help center</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span>FAQ</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span>Quick Start Guide</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i> </span> Tutorials</li>
+                </ul>
+            </div>
+            <div class=" quickLinks col-md-6 col-lg-3 d-flex justify-content-center flex-column align-items-center">
+                <h2>Community
+                </h2>
+                <ul class="">
+                    <li><span><i class="fa-solid fa-greater-than"></i>  </span>  Privacy policy</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i>  </span>  End User Agreements</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i>  </span>  Refund Policy</li>
+                    <li><span><i class="fa-solid fa-greater-than"></i>  </span>  Cookie policy</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

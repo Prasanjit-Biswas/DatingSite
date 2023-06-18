@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 75%;
+    font-family: 'Slabo 27px', serif;
+}
+
+.navbar {
+    background-color: rgb(241, 247, 254);
+    padding: 1.8rem !important;
+
+}
+
+.menu ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.menu ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+form {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.input{
+    width: 100%;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+}
+
+.my_gender {
+    display: flex;
+    gap: 1rem;
+}
+.oposite_gender{
+    display: flex;
+    gap: 1rem;
+}
+label{
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+
+.personal_info{
+    background-color: rgb(136,78,224);
+    padding-top: 4rem;
+    
+}
+.personal_info .row .col-md-12{
+    display: flex;
+    justify-content: center;
+}
+.personal_info .row .col-md-12 img{
+    height: 90vh;
+    width: 80%;
+}
+/* services */
+.services{
+    /* background-color: red; */
+    padding: 0 7rem !important;
+   
+    background-color:  rgb(241,247,254);
+margin-top: 5rem;
+
+}
+.services .row{
+    
+}
+.services-features{
+    display: flex;justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+.box{
+    background-color: rgb(255,255,255);
+    padding: 3rem 0;
+}
+.box:hover{
+    box-shadow: 5px 5px 20px;
+}
+.box p{
+    padding: 1rem 1rem;
+}
+.box h2:hover{
+    cursor: pointer;
+    color: rgb(255,113,141);
+}
+.personsFilter{
+    background-color:  rgb(241,247,254);
+}
+.personsFilter ul{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+
+}
+.personsFilter ul li{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border: 1px solid black;
+    padding: .3rem 1rem;  
+
+}
+.personsFilter ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.persons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+/* .persons .itemBox{
+flex: 1 1 15rem;
+    
+} */
+.persons img{
+    height: 15rem;
+    width: 15rem;
+
+}
+.stories{
+    padding: 0 2rem;
+    background-color:  rgb(241,247,254);
+
+}
+.stories .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+.stories .row .col-md-6{
+    display: flex;flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: left !important;
+    gap: 2rem;
+}
+.stories .row .col-md-6 .content img{
+   height: 3rem;
+   width: 3rem; 
+}
+.stories img{
+    width: 100%;
+}
+.meetPeople{
+    background-color:  rgb(241,247,254);
+}
+.meetPeople .row{
+    row-gap: 1rem;
+}
+.meetPeople .row img{
+    height: 25rem;
+    width: 100%;
+}
+.membership{
+    background-color:  rgb(241,247,254);
+    row-gap: 1rem;
+}
+.app{
+    background-color:  rgb(241,247,254);
+}
+.membership .row{
+    row-gap: 2rem;
+}
+.footer{
+    background-color: rgb(115,70,215);
+    color: white;
+}
+.download{
+    background-color: aliceblue;
+    padding: .5rem 0;
+    box-shadow: 5px 5px .5rem black;
+    gap: 2rem;
+}
+.signup{
+    border: 1px solid black;
+
+}
+.signup input{
+    border: none;
+}
+.signup button{
+    width: 5rem;
+    height: rem;
+}
+.socialmedia i{
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+.socialmedia i:hover{
+    border-radius: 1rem;
+}
+.quickLinks ul {
+    list-style: none;
+    font-size: 1.2rem;
+   
+}
+.quickLinks ul li{
+    margin-top: 15px;
+    
+}
+@media screen and (max-width:850px) {
+    body {
+        font-size: 55%;
+    }
+
+    .navbar {
+        z-index: 1;
+        position: relative;
+    }
+
+    .navbar .menu {
+        position: absolute;
+        top: -35rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(82, 82, 82);
+        right: 0;
+
+    }
+
+    .navbar .menu.active {
+        top: 5rem;
+    }
+
+    .navbar .menu ul {
+        flex-direction: column !important;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .navbar .menu ul li {
+        font-size: 1.4rem;
+        color: whitesmoke;
+
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    form{
+        width: 100%;
+    }
+    .app{
+        margin-bottom: 3rem;
+    }
+}
